@@ -2,7 +2,7 @@
 buildscript {
     ext {
         compose_version = '1.0.1'
-        retrofitVersion = '2.3.0'
+        navigation_version = '2.4.0-beta02'
     }
     repositories {
         google()

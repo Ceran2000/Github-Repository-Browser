@@ -70,11 +70,13 @@ dependencies {
 
     implementation "androidx.compose.runtime:runtime:$compose_version"
 
-    //Retrofit
+/*    //Retrofit
     implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
     implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
-    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"*/
 
     //Apollo GraphQL
     implementation("com.apollographql.apollo3:apollo-runtime:3.0.0")
+
+    implementation "androidx.navigation:navigation-compose:$navigation_version"
 }

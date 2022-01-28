@@ -18,7 +18,7 @@ class ReposListViewModel : ViewModel() {
 
     private fun getRepos(){
         viewModelScope.launch {
-            val response = getApolloClient().query(ReposListQuery(4)).execute()
+            val response = getApolloClient().query(ReposListQuery(20)).execute()
             repos.value = response.data?.viewer?.repositories?.nodes
         }
     }
