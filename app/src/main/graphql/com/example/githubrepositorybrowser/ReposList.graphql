@@ -1,0 +1,17 @@
+query ReposList($number_of_repos: Int!) {
+    viewer {
+        login
+        repositories(last: $number_of_repos) {
+            nodes {
+                name
+                description
+                commitComments{
+                    totalCount
+                }
+                issues{
+                    totalCount
+                }
+            }
+        }
+    }
+}
