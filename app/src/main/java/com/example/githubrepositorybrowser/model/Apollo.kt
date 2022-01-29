@@ -10,7 +10,7 @@ import okhttp3.Response
 private class AuthorizationInterceptor(): Interceptor {
     override fun intercept(chain: Interceptor.Chain): Response {
         val request = chain.request().newBuilder()
-            .addHeader("Authorization", "Bearer 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")
+            .addHeader("Authorization", "Bearer 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")
             .build()
 
         return chain.proceed(request)

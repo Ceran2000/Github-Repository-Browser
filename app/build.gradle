@@ -79,4 +79,6 @@ dependencies {
     implementation("com.apollographql.apollo3:apollo-runtime:3.0.0")
 
     implementation "androidx.navigation:navigation-compose:$navigation_version"
+
+    implementation "androidx.compose.runtime:runtime-livedata:$compose_version"
 }
