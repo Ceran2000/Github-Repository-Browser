@@ -7,24 +7,10 @@ import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.Response
 
-private class AuthorizationInterceptor(): Interceptor {
-    override fun intercept(chain: Interceptor.Chain): Response {
-        val request = chain.request().newBuilder()
-            .addHeader("Authorization", "Bearer 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")
-            .build()
-
-        return chain.proceed(request)
-    }
-}
-
-class GitHubApi{
-
-}
-
 private var instance: ApolloClient? = null
 
 fun getApolloClient(): ApolloClient {
-    if (instance != null){
+    if (instance != null) {
         return instance!!
     }
     val okHttpClient = OkHttpClient.Builder()
@@ -38,3 +24,16 @@ fun getApolloClient(): ApolloClient {
 
     return instance!!
 }
+
+private class AuthorizationInterceptor() : Interceptor {
+    override fun intercept(chain: Interceptor.Chain): Response {
+        val request = chain.request().newBuilder()
+            .addHeader("Authorization", "Bearer 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")
+            .build()
+
+        return chain.proceed(request)
+    }
+}
+
+
+

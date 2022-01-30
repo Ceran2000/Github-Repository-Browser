@@ -70,15 +70,21 @@ dependencies {
 
     implementation "androidx.compose.runtime:runtime:$compose_version"
 
-/*    //Retrofit
-    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
-    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
-    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"*/
-
     //Apollo GraphQL
     implementation("com.apollographql.apollo3:apollo-runtime:3.0.0")
 
+    //Navigation
     implementation "androidx.navigation:navigation-compose:$navigation_version"
 
+    //LiveData
     implementation "androidx.compose.runtime:runtime-livedata:$compose_version"
+
+    //Material Design Icons
+    implementation "androidx.compose.material:material-icons-extended:$compose_version"
+
+    implementation "com.google.accompanist:accompanist-systemuicontroller:0.17.0"
+
+    //Paging
+    implementation "androidx.paging:paging-runtime:$paging_version"
+    implementation "androidx.paging:paging-compose:1.0.0-alpha14"
 }
