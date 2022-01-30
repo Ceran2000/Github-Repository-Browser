@@ -4,6 +4,7 @@ buildscript {
         compose_version = '1.0.1'
         navigation_version = '2.4.0-beta02'
         paging_version = '3.1.0'
+        PersonalAccessToken = '"Bearer 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"'
     }
     repositories {
         google()

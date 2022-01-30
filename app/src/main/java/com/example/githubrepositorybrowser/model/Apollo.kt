@@ -3,6 +3,7 @@ package com.example.githubrepositorybrowser.model
 
 import com.apollographql.apollo3.ApolloClient
 import com.apollographql.apollo3.network.okHttpClient
+import com.example.githubrepositorybrowser.BuildConfig
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.Response
@@ -28,7 +29,7 @@ fun getApolloClient(): ApolloClient {
 private class AuthorizationInterceptor() : Interceptor {
     override fun intercept(chain: Interceptor.Chain): Response {
         val request = chain.request().newBuilder()
-            .addHeader("Authorization", "Bearer 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")
+            .addHeader("Authorization", BuildConfig.PersonalAccessToken)
             .build()
 
         return chain.proceed(request)
